@@ -6,7 +6,6 @@ const imagedataRoutes = express.Router();
 
 const { getApi, postApi } = require("../controllers/imgdataController");
 
-
 const storage = multer.diskStorage({
     destination: './uploads',
     filename: (req, file, cb) => {
